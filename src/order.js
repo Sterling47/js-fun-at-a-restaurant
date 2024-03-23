@@ -20,11 +20,11 @@ function refundOrder(number, deliveryOrders) {
   
 function listItems(deliveryOrders) {
   // console.log('delivry<>>>>', deliveryOrders)
-  var string = '';
+  var array = [];
   for(var i=0; i < deliveryOrders.length; i++) {
-  string += `${deliveryOrders[i].item}, `
+  array.push(deliveryOrders[i].item)
   }
-  return string.slice(0,-2)
+  return array.join(', ')
 }
 
 function searchOrder(order, deliveryOrders) { 
