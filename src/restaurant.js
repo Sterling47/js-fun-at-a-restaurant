@@ -1,5 +1,3 @@
-
-
 function createRestaurant(name) {
   var restaurant = {
     name: name,
@@ -10,21 +8,19 @@ function createRestaurant(name) {
     }
   }
   return restaurant
-}
+};
 
 
 function addMenuItem(pizzaRestaurant, menuItem) {
   if(!pizzaRestaurant.menus[menuItem.type].includes(menuItem)){
     pizzaRestaurant.menus[menuItem.type].push(menuItem)
   } 
-}
-
+};
 
 function removeMenuItem(pizzaRestaurant, menuItem, menuItemType) {
-  console.log('param1', pizzaRestaurant)
-  console.log('param2', menuItem)
-  console.log('param3', menuItemType)
-
+  // console.log('param1', pizzaRestaurant)
+  // console.log('param2', menuItem)
+  // console.log('param3', menuItemType)
   var indexItem = pizzaRestaurant.menus[menuItemType].findIndex(function(itemMenu){
     return itemMenu.name === menuItem
   })
@@ -34,20 +30,19 @@ function removeMenuItem(pizzaRestaurant, menuItem, menuItemType) {
   } else {
     return `Sorry, we don't sell ${menuItem}, try adding a new recipe!`
   }
-}
+};
 
 function checkForFood(foodConfirmation, item) {
- 
   var indexItem = foodConfirmation.menus[item.type].findIndex(function(itemMenu){
     return itemMenu.name === item.name
-  })
+    }
+  )
   if(indexItem !== -1) {
     return `Yes, we're serving ${item.name} today!`
   } else {
     return `Sorry, we aren't serving ${item.name} today.`
   }
-
-}
+};
 
 module.exports = {
   createRestaurant, 
