@@ -47,14 +47,6 @@ function checkForFood(foodConfirmation, item) {
     return `Sorry, we aren't serving ${item.name} today.`
   }
 
-  // console.log('food>>>>>>', foodConfirmation)
-  // console.log('message>>>>>', item)
-//   for(var i = 0; i < foodConfirmation.menus.breakfast.length; i++){
-//   if(foodConfirmation.menus[i] === item.name) {
-//     console.log('NAME>>>>>>', foodConfirmation.menus[i])
-//     return `Yes, we're serving ${item.name} today!`
-//   }
-// }
 }
 
 module.exports = {
