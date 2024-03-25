@@ -31,7 +31,7 @@ inStock = inStock - 1;
 
 var isFavorite = true;
 
-console.log(isFavorite)
+// console.log(isFavorite)
 // Create a new variable named "shouldOrderMore", and use a comparison operator to
 // assign a boolean value to this variable. If "inStock" is less than 20, the
 // variable should be true, otherwise it should be false. You MUST use a
@@ -39,7 +39,7 @@ console.log(isFavorite)
 
 var shouldOrderMore = inStock < 20;
 
-console.log(shouldOrderMore)
+// console.log(shouldOrderMore)
 
 //------------------------- Conditionals -------------------------//
 
@@ -75,7 +75,7 @@ var vegetables = ['carrots', 'celery', 'cabbage', 'green beans', 'potatos']
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-console.log(vegetables[2]);
+// console.log(vegetables[2]);
 
 // Create a new variable "fruits" and assign it to an Array of 7
 // different fruits.
@@ -83,7 +83,7 @@ var fruits = ['apple', 'banana', 'lili koi', 'grapes', 'guava', 'orange', 'kiwi'
 
 
 // Write the code to access the 5th element of the array, using bracket notation.
-console.log(fruits[4])
+// console.log(fruits[4])
 
 //------------------------- Objects -------------------------//
 
@@ -101,4 +101,4 @@ var groceryStore = {
 
 groceryStore.location = 'Denver, Colorado';
 
-console.log(groceryStore.location)
+// console.log(groceryStore.location)
